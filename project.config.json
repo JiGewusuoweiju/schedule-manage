@@ -1,6 +1,7 @@
 {
-  "miniprogramRoot": "client/",
+  "miniprogramRoot": "client/dist/",
   "cloudfunctionRoot": "cloudfunctions/",
+  "description": "Schedule management and scorekeeping",
   "setting": {
     "urlCheck": true,
     "es6": true,
@@ -45,8 +46,8 @@
     "disableSWC": true
   },
   "appid": "wx333fb215aebee1e6",
-  "projectname": "quickstart-wx-cloud",
-  "libVersion": "2.20.1",
+  "projectname": "schedule-manage",
+  "libVersion": "3.8.9",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
   "condition": {
     "search": {
@@ -72,7 +73,8 @@
     }
   },
   "compileType": "miniprogram",
-  "srcMiniprogramRoot": "client/",
+  "simulatorType": "wechat",
+  "srcMiniprogramRoot": "client/dist/",
   "packOptions": {
     "ignore": [],
     "include": []
