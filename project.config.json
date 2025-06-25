@@ -1,0 +1,16 @@
+{
+  "miniprogramRoot": "client/dist/",
+  "cloudfunctionRoot": "cloud/functions/",
+  "projectname": "schedule-manage",
+  "description": "用于记录赛程以及比赛的得分",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
