@@ -3,14 +3,15 @@
  * @Date: 2025-06-26 14:40:41
  */
 import { Tabbar } from '@nutui/nutui-react-taro'
-import { Cart, Hi, Home, User } from '@nutui/icons-react-taro'
-const HomeTabBar = () => {
+import { Hi, Home, User } from '@nutui/icons-react-taro'
+const HomeTabBar = (props: any) => {
+  const { changeTab } = props;
+
   return (
-    <Tabbar>
-      <Tabbar.Item title="首页" icon={<Home />} />
-      <Tabbar.Item title="逛" icon={<Hi />} />
-      <Tabbar.Item title="购物车" icon={<Cart />} />
-      <Tabbar.Item title="我的" icon={<User />} />
+    <Tabbar fixed onSwitch={(value) => {changeTab(value)}}>
+      <Tabbar.Item title="全部赛程" icon={<Home />} />
+      <Tabbar.Item title="比赛" icon={<Hi />} />
+      <Tabbar.Item title="我的" icon={<User />} value={8} />
     </Tabbar>
   );
 };
