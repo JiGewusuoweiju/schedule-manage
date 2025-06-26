@@ -2,9 +2,10 @@
  * @Description: 首页-比赛
  * @Date: 2025-06-26 16:26:33
  */
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Taro from '@tarojs/taro';
 const Game = () => {
+  const [test, setTest] = useState<any>('')
   useEffect(() => {
     Taro.cloud.callFunction({
       name: 'login',
@@ -13,13 +14,15 @@ const Game = () => {
       },
     }).then(res => {
       console.log('云函数调用成功:', res.result);
+      setTest(res.result);
     }).catch(err => {
       console.error('云函数调用失败:', err);
     });
   }, []);
   return (
     <div>
-      456
+      拿到openID啦
+      {test?.openid}
     </div>
   );
 };
