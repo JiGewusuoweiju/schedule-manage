@@ -2,7 +2,7 @@ import { defineConfig, type UserConfigExport } from '@tarojs/cli'
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 import devConfig from './dev'
 import prodConfig from './prod'
-import vitePluginImp from 'vite-plugin-imp'
+// import vitePluginImp from 'vite-plugin-imp'
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
 export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
   const baseConfig: UserConfigExport<'webpack5'> = {
@@ -29,9 +29,9 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
     framework: 'react',
     compiler: {
 
-      type: 'webpack5', 
+      type: 'webpack5',
       prebundle: {
-        enable: false
+        enable: false,
       }
     },
     cache: {
