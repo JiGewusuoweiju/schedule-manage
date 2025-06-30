@@ -4,6 +4,7 @@
  */
 import {useState} from 'react';
 import HomeTabBar from '../components/tabbar/index';
+import { View } from '@tarojs/components'
 import AllSchedule from './allSchedule';
 import Game from './game';
 import User from './user';
@@ -15,8 +16,8 @@ const Home = () => {
     setTabIndex(data)
   }
   return (
-    <div className={'home'}>
-      <div className={'home-body'}>
+    <View className={'home'}>
+      <View className={'home-body'}>
         {
           tabIndex === 0 && <AllSchedule />
         }
@@ -26,9 +27,9 @@ const Home = () => {
         {
           tabIndex === 2 && <User />
         }
-      </div>
+      </View>
       <HomeTabBar changeTab={changeTab} />
-    </div>
+    </View>
   );
 };
 

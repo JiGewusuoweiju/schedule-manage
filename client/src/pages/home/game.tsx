@@ -4,6 +4,7 @@
  */
 import { useEffect, useState } from 'react';
 import Taro from '@tarojs/taro';
+import { View } from '@tarojs/components'
 const Game = () => {
   const [test, setTest] = useState<any>('')
   useEffect(() => {
@@ -20,10 +21,10 @@ const Game = () => {
     });
   }, []);
   return (
-    <div>
+    <View>
       拿到openID啦
       {test?.openid}
-    </div>
+    </View>
   );
 };
 

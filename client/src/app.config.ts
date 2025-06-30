@@ -1,6 +1,7 @@
 export default defineAppConfig({
   pages: [
-    'pages/index/index'
+    'pages/index/index', // 首页
+    'pages/creatSchedule/index', // 创建赛程
   ],
   window: {
     backgroundTextStyle: 'light',
