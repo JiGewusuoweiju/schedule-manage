@@ -10,10 +10,10 @@ const AllSchedule = () => {
   return (
     <View className={'allScheduleBox'}>
       <View className={'btnList'}>
-        <Button type="primary" className={'oneBtn'} onClick={() => {}}>
+        <Button className={'oneBtn'} onClick={() => {}}>
           关联赛程
         </Button>
-        <Button type="primary" className={'oneBtn'} onClick={() => {
+        <Button className={'oneBtn'} onClick={() => {
           Taro.navigateTo({
             url: '/pages/creatSchedule/index',
           });
